@@ -140,11 +140,32 @@ main {
                         
                     }
                     .address-bar{
-                        background-color: rebeccapurple;
                         gap: 0.3vw;
                         display: flex;
                         font-size: 0.8vw;
-                        align-items: center;                    
+                        align-items: center;   
+                        
+                        .icono img {
+                            width: 1vw;
+                            height: auto;
+                            opacity: 0.8;   
+                        }
+                        .lock{
+                            display: flex;
+                            background-color: #434343;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 1vw;
+                            gap: 0.3vw;
+
+                            width: 15vw;
+                            .icono2 img{
+                                width: 0.7vw;
+                                height: auto;
+                                opacity: 0.8;   
+                            }
+                        }
+
                     }
                     .actions{
                         .icono img {
