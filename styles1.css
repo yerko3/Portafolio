@@ -110,6 +110,7 @@ main {
                     padding: 1vh 1vw;
                     background: #1a1a1a;
                     border-radius: 1.5vw 1.5vw 0 0;
+                    justify-content: space-between;
 
                     .window-controls{
                         display: flex;
@@ -131,24 +132,26 @@ main {
                             }
     
                         }
-                    }
-                    .nav-controls{
-                        background-color: red;
-                        display: flex;
                         .icono img {
-                            width: 1.2vw;
+                            width: 1vw;
                             height: auto;
-                            margin-top: 0.5vh;
                             opacity: 0.8;
-                          }
+                        }
                         
                     }
                     .address-bar{
                         background-color: rebeccapurple;
+                        gap: 0.3vw;
                         display: flex;
-                        align-items: center;                    }
+                        font-size: 0.8vw;
+                        align-items: center;                    
+                    }
                     .actions{
-                        background-color: #69A7F0;
+                        .icono img {
+                            width: 1vw;
+                            height: auto;
+                            opacity: 0.8;
+                        }
                     }
 
                 }
