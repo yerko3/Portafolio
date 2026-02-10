@@ -12,6 +12,8 @@ body{
     height: 300vh;
     margin: 0;
    /* overflow: hidden;  */
+   font-size: 1vw;
+   overflow-x: hidden;
 }
 .navbar{                    
     margin: 1vw;
