@@ -1,8 +1,6 @@
 html {box-sizing: border-box; }
 *, *:before, *:after {box-sizing: inherit; }
-*{
-    font-family: "Outfit",sans-serif;
-}
+
 :root {
   --box-width: 60vw;
   --box-min-height: 50vh;
@@ -14,6 +12,23 @@ body{
    /* overflow: hidden;  */
    font-size: 1vw;
    overflow-x: hidden;
+}
+body, html {
+    font-family: "Outfit", sans-serif;
+    font-size: 1vw; 
+    color: black;
+}
+h1, h2, h3, h4, h5, h6, p, a, span, button, input, code, pre {
+    font-family: 'Outfit', sans-serif;
+}
+
+body h1, 
+body h2, 
+body h3, 
+body .h1, 
+body .h2 {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 700 !important; /* Outfit se ve mejor en negrita para h1 */
 }
 .navbar{                    
     margin: 1vw;
@@ -154,7 +169,7 @@ main {
                         }
                         .lock{
                             display: flex;
-                            background-color: #434343;
+                            background-color:#434343;
                             justify-content: center;
                             align-items: center;
                             border-radius: 1vw;
@@ -231,6 +246,7 @@ main {
         height: 99.9vh;
         text-align: center;
         font-size: 1vw;
+        font-family: 'Outfit', sans-serif;
         overflow: hidden;
         h1{
               margin-top: 12vw;
@@ -593,3 +609,92 @@ main {
     50% { border-color: transparent; }
   }
   
+
+@media (max-width: 992px) {
+
+    .menu {
+        display: none;
+    }
+
+    #button {
+        display: none;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+
+        padding: 0 2vw;
+    }
+
+    .navbar aside img {
+        height: 8vh;
+        width: 14vw;
+    }
+
+    .navbar-toggler {
+        display: flex;
+        border: none;
+    }
+
+    .navbar-toggler-icon {
+        display: none;
+    }
+
+    .navbar-toggler::before {
+        content: "☰";
+        font-size: 3vw;
+        color: black;
+    }
+    .offcanvas {
+        padding: 3vh 2vw;
+
+        .offcanvas-header {
+
+            h5 {
+                font-size: 4.6vw;
+            }
+
+            .btn-close {
+                font-size: 1.2vh;
+                background-color: #AEFE0A;
+            }
+        }
+    }
+    .offcanvas-body{
+        padding-top: 2vh;
+        font-size: 2vw;
+        .nav{
+            display: flex;
+            color: black;
+            text-decoration: none;
+            height: 4vh;
+            justify-content: center;
+            padding-top: 0.5vh;
+            
+        }
+            .nav:hover{
+            background-color: #7F79F7;
+            border: 0.2vw solid black;
+            border-radius: 1vw;
+            box-shadow: 0.50vw 0.50vw black;
+        }
+            .mobile-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+        text-decoration: none;
+        border-radius: 1vw;
+        padding: 1vh;
+        }
+        .mobile-button:hover{
+        color: var(--hover-text);
+        background-color:#AEFE0A;
+        box-shadow: 0.50vw 0.50vw black;
+        color: black;
+    }
+    }
+
+    
+}

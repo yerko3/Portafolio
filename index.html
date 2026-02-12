@@ -4,71 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
-    <link rel="stylesheet" href="styles1.css">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
+<header class="navbar navbar-expand-lg">
 
-    <header class="navbar">
-        <aside>
-            <a href=""><img src="images/Captura de pantalla 2025-11-27 184537.png" alt="logo" class="logo-img"></a>
-            </aside>
+    <aside>
+        <a href="">
+            <img src="images/Captura de pantalla 2025-11-27 184537.png" 
+                 alt="logo" 
+                 class="logo-img">
+        </a>
+    </aside>
 
-        <nav class="menu">
-            <a class="nav" href="./index.html#item1">Acerca de</a>
-            <a class="nav" href="./index.html#item2">Proyectos</a>
-            <a class="nav" href="./index.html#item3">Skills & Tools</a>
-            
+    <button class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu">
+    </button>
 
-        </nav>
-            <a id ="button" href="./index.html#item4">Contáctame </a>
+    <nav class="menu collapse navbar-collapse justify-content-center">
+        <a class="nav" href="#item1">Acerca de</a>
+        <a class="nav" href="#item2">Proyectos</a>
+        <a class="nav" href="#item3">Skills & Tools</a>
+    </nav>
 
-    </header>
+    <a id="button" href="#item4" class="d-none d-lg-block">
+        Contáctame
+    </a>
+
+</header>
+
+<section class="offcanvas offcanvas-end"
+         tabindex="-1"
+         id="mobileMenu">
+
+    <section class="offcanvas-header">
+        <h5>Menú</h5>
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"></button>
+    </section>
+
+    <section class="offcanvas-body d-flex flex-column gap-4">
+        <a class="nav" href="#item1">Acerca de</a>
+        <a class="nav" href="#item2">Proyectos</a>
+        <a class="nav" href="#item3">Skills & Tools</a>
+        <a class="mobile-button" href="#item4">Contáctame</a>    </section>
+
+</section>
+    
     <main>
         <section id="item1">
                 <aside class="console main-ui">
                     
                     <header class="console-bar">
                         <section class="window-controls">
-                            <span class="dot red"></span>
-                            <span class="dot yellow"></span>
-                            <span class="dot green"></span>
+                            <section style="display:inline-block" class="dot red"></section>
+                            <section style="display:inline-block" class="dot yellow"></section>
+                            <section style="display:inline-block" class="dot green"></section>
 
-                            <span class="icono"><img src="images/angle-left-solid-full.svg"></span>
-                            <span class="icono"><img src="images/angle-right-solid-full (1).svg"></span>
+                            <section style="display:inline-block" class="icono"><img src="images/angle-left-solid-full.svg"></section>
+                            <section style="display:inline-block" class="icono"><img src="images/angle-right-solid-full (1).svg"></section>
                         </section>
 
                         <section class="address-bar">
-                            <span class="icono"><img src="images/shield-halved-solid-full2.svg"></span>
-                            <span class="lock">
-                                <span class="icono2"><img src="images/lock-solid-full2.svg"></span>
-                                <span class="url">yerko3.github.io/Portafolio</span>
-                                <span class="icono2"><img src="images/arrow-rotate-right-solid-full2.svg"></span>
+                            <section style="display:inline-block" class="icono"><img src="images/shield-halved-solid-full2.svg"></section>
+                            <section class="lock">
+                                <section style="display:inline-block" class="icono2"><img src="images/lock-solid-full2.svg"></section>
+                                <section style="display:inline-block" class="url">yerko3.github.io/Portafolio</section>
+                                <section style="display:inline-block" class="icono2"><img src="images/arrow-rotate-right-solid-full2.svg"></section>
 
-                            </span>                      
+                            </section>                      
 
                         </section>
                         
                         <section class="actions">
-                            <span class="icono"><img src="images/arrow-up-from-bracket-solid-full2.svg"></span>
-                            <span class="icono"><img src="images/plus-solid-full2.svg"></span>
-                            <span class="icono"><img src="images/clone-regular-full2.svg"></span>
+                            <section style="display:inline-block" class="icono"><img src="images/arrow-up-from-bracket-solid-full2.svg"></section>
+                            <section style="display:inline-block" class="icono"><img src="images/plus-solid-full2.svg"></section>
+                            <section style="display:inline-block" class="icono"><img src="images/clone-regular-full2.svg"></section>
                         </section>
                     </header>
 
                     <article class="console-content">
                         <pre class="console-body">
                             <code>
-                            <span class="line"><span class="kw">var</span> <span class="var">developer</span> = <span class="kw">new</span> <span class="type">Developer</span></span>
-                            <span class="line">{</span>
-                            <span class="line tab">Name = <span class="str">"Yerko"</span>,</span>
-                            <span class="line tab">Role = <span class="str">"Fronted / Full Stack"</span>,</span>
-                            <span class="line tab">Stack = <span class="kw">new</span>[] { <span class="str">"C#"</span>, <span class="str">"ASP.NET"</span>, <span class="str">"SQL"</span> },</span>
-                            <span class="line tab">Mindset = <span class="str">"Clean code & continuous learning"</span></span>
-                            <span class="line">};</span>
+                            <section style="display:inline-block" class="line"><section style="display:inline-block" class="kw">var</section> <section style="display:inline-block" class="var">developer</section> = <section style="display:inline-block" class="kw">new</section> <section style="display:inline-block" class="type">Developer</section></section>
+                            <section style="display:inline-block" class="line">{</section style="display:inline-block">
+                            <section style="display:inline-block" class="line tab">Name = <section style="display:inline-block" class="str">"Yerko"</section>,</section>
+                            <section style="display:inline-block" class="line tab">Role = <section style="display:inline-block" class="str">"Fronted / Full Stack"</section>,</section>
+                            <section style="display:inline-block" class="line tab">Stack = <section style="display:inline-block" class="kw">new</section>[] { <section style="display:inline-block" class="str">"C#"</section>, <section style="display:inline-block" class="str">"ASP.NET"</section>, <section style="display:inline-block" class="str">"SQL"</section> },</section>
+                            <section style="display:inline-block" class="line tab">Mindset = <section style="display:inline-block" class="str">"Clean code & continuous learning"</section></section>
+                            <section style="display:inline-block" class="line">};</section>
 
-                            <span class="line"><span class="comment">// Always learning, always improving</span></span>
+                            <section style="display:inline-block" class="line"><section style="display:inline-block" class="comment">// Always learning, always improving</section></section>
                             </code>
                         </pre>
                     </article>
@@ -297,6 +329,6 @@
         </section>
     </main>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
