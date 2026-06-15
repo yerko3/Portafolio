@@ -399,17 +399,51 @@ main {
                 img{
                     width: 3.5vw;
                     max-height: 4vh;
+                    object-fit: contain;
+                    transition: filter 0.3s ease;
                 }
                 article{
                     display: flex;
                     flex-direction: column;
                     align-items: center;
                     gap: 1.5vh;
+
+                    position: relative;
+                    transition: transform 0.4s ease-out;
+                    cursor: pointer;
+
+                    .logo-color, .logo-negro{
+                        width: 3.5vw;
+                        max-height: 4vh;
+                        object-ratio: 1;
+                        object-fit: contain;
+                        
+                        transition: opacity 0.4s ease-out;
+                    }
+                    .logo-color {
+                        position: absolute;
+                        top: 0; /* Se alinea perfectamente con la negra */
+                        opacity: 0; /* Por defecto está invisible */
+                    }
+                    .logo-negro {
+                        opacity: 1; /* Por defecto la negra es la que se ve */
+                    }
                 }
+                article :hover{
+                    transform: scale(1.11);
+                }
+                article:hover .logo-color {
+                    opacity: 1;
+                }
+                article:hover .logo-negro {
+                    opacity: 0;
+                }
+                
             }
     
         }
     }
+    
     #item4{
         min-height: 98vh;
         background-color: #AEFE0A;
