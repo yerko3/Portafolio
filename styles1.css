@@ -124,7 +124,7 @@ main {
                     display: flex;
                     align-items: center;
                     padding: 1vh 1vw;
-                    background: red;
+                    background: #1a1a1a;
                     border-radius: 1.5vw 1.5vw 0 0;
                     justify-content: space-between;
 
